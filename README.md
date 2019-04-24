@@ -1,5 +1,6 @@
 # OS110 Exercism 
 Esai ini dibuat untuk memenuhi tugas mata kuliah Sistem Operasi semester 110. Saya akan menjelaskan problem terkait Scrabble Score.
+
 # Scrabble Score
 Dalam problem ini masing-masing alphabet memiliki bobotnya sendiri, beberapa alphabet memiliki jumlah bobot sama dengan alphabet lainnya, berikut aturannya :
 - A, E, I, O, U, L, N, R, S, T memiliki bobot nilai 1
@@ -10,13 +11,14 @@ Dalam problem ini masing-masing alphabet memiliki bobotnya sendiri, beberapa alp
 - J, X memiliki bobot nilai  8
 - Q, Z memiliki bobot nilai  10
 
-#Penyelesaian Masalah
+# Penyelesaian Masalah
 Langkah awal kita dapat mengubah setiap karakternya menjadi huruf kapital seperti ini, agar mempermudah dalam proses pengelompokannya
 
 <h4><p> for c in word.to_ascii_uppercase().chars() </p></h4>
 
 Kemudian kita dapat menjumlahkan hasil dari setiap kata yang sudah diberikan bobotnya masing-masing menggunakan metode match
- hasil += match c {
+
+<div> hasil += match c {
  - 'A' | 'E' | 'I' | 'O' | 'U'| 'L' | 'N' | 'R' | 'S' |'T' => 1,
  - 'D' |'G' => 2,
  - 'B' | 'C' | 'M' |'P' => 3,
@@ -28,3 +30,4 @@ Kemudian kita dapat menjumlahkan hasil dari setiap kata yang sudah diberikan bob
 
     }
     
+</div>
