@@ -18,7 +18,8 @@ Langkah awal kita dapat mengubah setiap karakternya menjadi huruf kapital sepert
 
 Kemudian kita dapat menjumlahkan hasil dari setiap kata yang sudah diberikan bobotnya masing-masing menggunakan metode match
 
-```html  hasil += match c { 
+```html  
+hasil += match c { 
  - 'A' | 'E' | 'I' | 'O' | 'U'| 'L' | 'N' | 'R' | 'S' |'T' => 1,
  - 'D' |'G' => 2,
  - 'B' | 'C' | 'M' |'P' => 3,
