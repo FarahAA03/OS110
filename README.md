@@ -14,11 +14,11 @@ Dalam problem ini masing-masing alphabet memiliki bobotnya sendiri, beberapa alp
 # Penyelesaian Masalah
 Langkah awal kita dapat mengubah setiap karakternya menjadi huruf kapital seperti ini, agar mempermudah dalam proses pengelompokannya
 
-<h4><p> for c in word.to_ascii_uppercase().chars() </p></h4>
+```html for c in word.to_ascii_uppercase().chars()```
 
 Kemudian kita dapat menjumlahkan hasil dari setiap kata yang sudah diberikan bobotnya masing-masing menggunakan metode match
 
-<div> hasil += match c {
+```html  hasil += match c { 
  - 'A' | 'E' | 'I' | 'O' | 'U'| 'L' | 'N' | 'R' | 'S' |'T' => 1,
  - 'D' |'G' => 2,
  - 'B' | 'C' | 'M' |'P' => 3,
@@ -29,5 +29,3 @@ Kemudian kita dapat menjumlahkan hasil dari setiap kata yang sudah diberikan bob
  - _ => 0,
 
     }
-    
-</div>
